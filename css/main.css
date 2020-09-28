@@ -1,0 +1,551 @@
+@font-face {
+	font-family: "Banny"; 
+	src: url("../fonts/TTF/Banny-Round.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: 14px;
+}
+header {
+	padding-top: 45px;
+	padding-bottom: 220px;   
+background: url(../img/header-bg.jpg) no-repeat center top / cover;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 36px;
+	font-family: Banny;
+	line-height: 48px;
+}
+p {
+	margin: 0;
+}
+li, ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.nav1 li a, .nav2 li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.nav1 li a:hover, .nav2 li a:hover {
+	color: #E8C300;
+}
+.nav1 li:not(:last-child){
+	margin-right: 70px;
+}
+.nav2 li:not(:last-child){
+	margin-right: 70px;
+}
+.nav1, .nav2{
+	display: flex;
+}
+.nav2 {
+	margin-left: auto;
+} 
+.nav {
+	display: flex;
+}
+.offer {
+	margin-top: 200px;
+	display: flex;
+}
+.mode {
+	font-size: 12px;
+	color: #FFFFFF;
+	transform: rotate(-90deg);
+	line-height: 12px;
+}
+.centr h3 {
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+	letter-spacing: 10px;
+	text-align: center;
+}
+.centr h1 {
+	font-size: 96px;
+	color: #fff;
+	line-height: 110px;
+	font-family: Banny;
+	text-align: center;
+	margin-bottom: 76px;
+}
+.btn1, .btn2 {
+	font-size: 12px;
+	width: 200px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;display: block;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 3px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	transition: 1s;
+}
+.btn1 {
+	margin-right: 20px;
+}
+.btn2 {
+	margin-left: 20px;
+}
+.btn {
+	justify-content: center;
+	display: flex;
+}
+.btn1:hover, .btn2:hover {
+	background-color: #E8C300;
+} 
+.social a {
+	height: 60px;
+	width: 60px;
+	display: block;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 41px;
+	transition: 1s;
+	text-align: center;
+}
+.social img {
+	padding-top: 33%;
+	padding-bottom: 33%;
+}
+.social a:not(:last-child) {
+	margin-bottom: 20px;
+}
+.social {
+	margin-top: 14px;
+	margin-left: auto;
+}
+.social a:hover {
+	transition: 1s;
+	background-color: rgba(255, 255, 255, 0.1);
+} 
+.about {
+	margin-top: 100px;
+}
+.about img {
+	width: 45%;
+}
+.about img:hover {
+	transition: 1s;
+	transform: scale(1.1);
+}
+.about1 {
+	display: flex;
+}
+.about-us {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.about-us h2 {
+	text-align: center;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-family: Banny;
+	margin-bottom: 25px;
+}
+.about-us p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.about-us p:last-child {
+	font-weight: normal;
+	margin-top: 10px;
+}
+.team {
+	padding-bottom: 100px;
+	padding-top: 50px;
+	background: url(../img/specialtys-bg.jpg) no-repeat center top / cover;
+}
+.team h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.5em;
+	font-family: Open Sans;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.master {
+	display: flex;
+}
+.master img {
+	border-radius: 6px;
+	width: 45%;
+}
+.master img:hover {
+	transition: 1s;
+	transform: scale(1.1);
+}
+.chef h2 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.chef {
+	margin-left: 50px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.chef p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Open Sans;
+	font-weight: bold;
+	color: #fff;
+}
+.chef p:last-child {
+	font-weight: normal;
+	margin-top: 10px;
+}
+.read {
+	margin-top: 100px;
+}
+.book {
+	justify-content: center;
+	display: flex;
+}
+.table {
+	margin-top: 60px;
+}
+.user {
+	display: flex;
+}
+.user1 {
+	margin-right: 10px;
+}
+.user1 input, .user2 input {
+	width: 96%;
+	background-color: #E5E5E5;
+	height: 45px;
+	padding-left: 6px;
+	border: none;
+	border-radius: 6px;
+	margin-bottom: 10px; 
+}
+.btnbook input {
+	cursor: pointer;
+	width: 100%;
+	height: 55px;
+	padding-left: 6px;
+	border: none;
+	border-radius: 6px;
+	background-color: #E8C300;
+	color: #fff;
+	font-size: 12px;
+}
+ .book img {
+ 	width: 38%;
+ }
+ .book img:hover {
+ 	transition: 1s;
+	transform: scale(1.1);
+}
+ .table h2 {
+ 	text-align: center;
+ 	margin-bottom: 37px;
+ }
+ .special {
+	padding-bottom: 100px;
+	padding-top: 50px;
+	background: url(../img/specialtys-bg3.jpg) no-repeat center top / cover;
+}
+.choc {
+	display: flex;
+}
+.special h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.5em;
+	font-family: Open Sans;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.choc img {
+	border-radius: 6px
+	width: 45%;
+}
+.choc img:hover {
+	transition: 1s;
+	transform: scale(1.1);
+}
+.choctxt {
+	margin-left: 50px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.choctxt h2 {
+	color: #fff;
+	text-align: center;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-family: Banny;
+	margin-bottom: 25px;
+}
+.choctxt p {
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.choctxt p:last-child {
+	font-weight: normal;
+	margin-top: 15px;
+}
+.menu {
+	padding-top: 65px;
+}
+.menutxt {
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.menutxt h2 {
+	text-align: center;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-family: Banny;
+	margin-bottom: 25px;
+}
+.menutxt p {
+	font-style: bold;
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.li-menu {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.li-menu ul {
+	display: flex;
+	justify-content: center;
+}
+.li-menu a {
+	font-style: bold;
+	font-size: 12px;
+	width: 120px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	line-height: 18px;
+	letter-spacing: 3px;
+	border: 1px solid rgba(51, 51, 51, 0.2);
+	border-top: none;
+	border-bottom: none;
+	transition: 1s;
+}
+.li-menu a:first-child {
+	border-left: none;
+}
+.li-menu a:nth-child(7) {
+	border-right: none;
+}
+.li-menu li {
+	border-radius: 2px;
+}
+.li-menu li:hover {
+	transition: 1s;
+	background-color: rgba(51, 51, 51, 0.2);
+}
+
+.pizza {
+	font-family: Banny;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+.pizza li {
+	margin-bottom: 20px;
+}
+.private {
+	background: url(../img/specialtys-bg3.jpg) no-repeat center top / cover;
+}
+.private h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.5em;
+	font-family: Open Sans;
+	text-align: center;
+	margin-bottom: 35px;
+	padding-left: 4px;
+}
+
+.private {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.priv {
+	justify-content:space-evenly; 
+	display: flex;
+}
+.private1, .private2 {
+	width: 45%;
+	background-color: #000;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-bottom: 60px;
+}
+.private1 img, .private2 img {
+	width: 100%;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.priv h4 {
+	padding-left: 8px;
+	font-family: Banny;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #fff;
+	font-style: Bold Round;
+}
+.wed, .corp {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.private p, .private a {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.gallery {
+	display: flex;
+}
+.gallery img {
+	width: 25%;
+}
+.contact {
+	margin-bottom: 60px;
+}
+.contact-txt {
+	width: 40%;
+	margin: 60px auto;
+}
+.contact h2 {
+	text-align: center;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-family: Banny;
+	margin-bottom: 25px;
+}
+.contact p {
+	font-style: bold;
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.ab-contact1 {
+	margin-bottom: 10px;
+}
+.ab-contact1 ul {
+	display: flex;
+	margin-bottom: 10px;
+}
+.ab-contact1 input {
+	background-color: #E5E5E5;
+	padding-left: 6px;
+	border: none;
+	border-radius: 6px;
+} {
+	background-color: #E5E5E5;
+	padding-left: 6px;
+	border: none;
+	border-radius: 6px;
+}
+.ab-contact1 li input {
+	width: 98%;
+	height: 60px;
+}
+.ab-contact1 li {
+	width: 35%;
+}
+.ab-contact1 li:not(:last-child) {
+	margin-right: 15px;
+}
+.msg {
+	width: 99.3%;
+	height: 120px;
+}
+.ab-contact2 {
+	display: flex;
+}
+.conect a {
+	text-decoration: none;
+	color: rgba(51, 51, 51, 0.5);
+	font-size: 12px;
+	font-weight: bold;
+}
+.conect {
+	width: 50%;
+}
+.conect a:last-child, .conect a:first-child {
+	margin-left: 10px;
+}
+.msgbtn {
+	width: 50%;
+}
+.msgbtn input {
+	cursor: pointer;
+	width: 100%;
+	height: 55px;
+	padding-left: 6px;
+	border: none;
+	border-radius: 6px;
+	background-color: #E8C300;
+	color: #fff;
+	font-size: 12px;
+}
+footer {
+	padding-top: 44px;
+	padding-bottom: 44px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+footer p {
+	font-style: bold;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.5);
+}
