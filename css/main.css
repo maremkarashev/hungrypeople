@@ -64,6 +64,10 @@ li, ul {
 .nav {
 	display: flex;
 }
+.burger {
+	display: none;
+	cursor: pointer;
+}
 .offer {
 	margin-top: 200px;
 	display: flex;
@@ -230,9 +234,11 @@ li, ul {
 .book {
 	justify-content: center;
 	display: flex;
+	margin-bottom: 50px;
 }
 .table {
-	margin-top: 60px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 .user {
 	display: flex;
@@ -289,7 +295,7 @@ li, ul {
 	margin-bottom: 35px;
 }
 .choc img {
-	border-radius: 6px
+	border-radius: 6px;
 	width: 45%;
 }
 .choc img:hover {
@@ -355,7 +361,6 @@ li, ul {
 	justify-content: center;
 }
 .li-menu a {
-	font-style: bold;
 	font-size: 12px;
 	width: 120px;
 	text-decoration: none;
@@ -370,13 +375,9 @@ li, ul {
 	border-top: none;
 	border-bottom: none;
 	transition: 1s;
+	color: #000;
 }
-.li-menu a:first-child {
-	border-left: none;
-}
-.li-menu a:nth-child(7) {
-	border-right: none;
-}
+
 .li-menu li {
 	border-radius: 2px;
 }
@@ -537,6 +538,19 @@ li, ul {
 	color: #fff;
 	font-size: 12px;
 }
+.map {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 footer {
 	padding-top: 44px;
 	padding-bottom: 44px;
@@ -549,3 +563,275 @@ footer p {
 	font-weight: bold;
 	color: rgba(255, 255, 255, 0.5);
 }
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1199px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 1024px;
+	}
+}
+@media screen and (max-width: 1025px) {
+	header {
+		padding-bottom: 50px;
+	}
+	.container {
+		width: 960px;
+	}
+	.offer {
+		display: block;
+	}
+	.centr {
+		margin: 0 auto;
+		width: 80%;
+	}
+	.social {
+		margin-top: 80px;
+		display: flex;
+		justify-content: center;
+	}
+	.social a {
+		margin-bottom: 0;
+	}
+	.social a:not(:last-child) {
+	margin-right: 2%;
+	margin-bottom: 0;
+	}
+	.mode {
+	    display: none;
+	}
+}
+@media screen and (max-width: 991px) {
+	.container {
+		width: 747px;
+	}
+}
+@media screen and (max-width: 770px) {
+	.container {
+		width: 565px;
+	}
+	header {
+		padding-bottom: 30px;
+	}
+	.about1, .master, .choc {
+		display: block;
+	}
+	.nav1, .nav2 {
+		width: 40%;
+		justify-content: space-between;
+	}
+	.nav1 li {
+		justify-content: space-between;
+	}
+	.nav1 li:not(:last-child){
+	margin-right: 0;
+	}
+	.nav2 li:not(:last-child){
+		margin-right: 0;
+	}
+	.offer {
+		margin-top: 120px;
+		display: block;
+	}
+	.mode {
+	    top: 45%;
+	    transform: none;
+	    position: absolute;
+	    width: 100%;
+	    text-align: center;
+	}
+	.about img , .master img, .choc img {
+		width: 100%;
+	}
+	.chef, .choctxt {
+		margin: 20px 0 0 0;
+	}
+	.menutxt, .contact-txt {
+		width: 100%;
+	}
+	.li-menu ul {
+		justify-content: space-around;
+	}
+	.li-menu li {
+		cursor: pointer;
+		border-radius: 4px;
+		width: 100%;
+	}
+	.li-menu li:hover{
+		border-style: solid;
+		border-width: 1px;
+		background-color: #E5E5E5;
+	}
+	.li-menu a {
+		border: none;
+	    width: 100%;
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	}
+	.read {
+		margin-top: 50px;
+	}
+	.book img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 94%;
+	}
+	header, .team, .special, .private, .contact {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.burger {
+		right: 3%;
+		position: absolute;
+		display: block;
+	}
+	.nav {
+		display: none;
+	}
+	.show-menu {
+		left: 30%;
+		top: 15px;
+		width: 50%;
+		display: block;
+		position: absolute;
+		background: rgba(0,0,0,0.9);
+	}
+	.show-menu li:hover {
+		background: #000;
+	}
+	.nav1, .nav2 {
+		width: auto;
+		display: block;
+	}
+	.nav1 li, .nav2 li {
+		height: 40px;
+		width: 100%;
+		text-align: center;
+	}
+	.nav1 li a, .nav2 li a {
+		display: block;
+		height: 100%;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	.offer {
+		margin-top: 0;
+	}
+	.centr h3 {
+		font-size: 10px;
+    	line-height: 12px;
+    	letter-spacing: 8px;
+	}
+	.centr h1 {
+		font-size: 50px;
+		line-height: 60px;
+		margin-bottom: 30px;
+	}
+	.btn {
+		justify-content: space-around;
+	}
+	.btn1, .btn2 {
+		margin: 0;
+		width: 40%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 10px;
+	}
+	
+	.social {
+		margin-top: 30px;
+	}
+	.social a {
+		height: 40px;
+		width: 40px;
+	}
+	.social img {
+	    padding-top: 25%;
+	    padding-bottom: 25%;
+	}
+	.about {
+		margin-top: 30px;
+	}
+	.about-us h2, .chef h2, .table h2, .choctxt h2, .menutxt h2, .contact h2 {
+		font-size: 36px;
+		margin-bottom: 15px;
+	}
+	.about-us p, .chef p, .choctxt p {
+		text-align: justify;
+	}
+	.master img, .choc img {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.menu {
+		padding-top: 20px;
+	}
+	.li-menu {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.li-menu li {
+	height: 38px;
+	}
+	.li-menu a {
+	letter-spacing: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	}
+	.pizza {
+		font-size: 12px;
+	}
+	.private1, .private2 {
+		margin-bottom: 30px;
+	}
+	.wed h4, .corp h4 {
+		text-align: center;
+		font-size: 14px;
+		padding-left: 0;
+	}
+	.wed , .corp {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.contact-txt {
+		margin-top: 0;
+	}
+	.conect {
+		padding-top: 10px;
+		width: 48%;
+	}
+	.msgbtn {
+		width: 48%;
+	}
+	.conect a {
+		font-size: 9px;
+	}
+	.conect a:last-child, .conect a:first-child {
+		margin-left: 0;
+	}
+	.ab-contact1 li input {
+		height: 40px;
+	}
+	.msg {
+		height: 60px;
+	}
+	.ab-contact2 {
+		justify-content: space-between;
+	}
+	.contact {
+		margin-bottom: 0;
+	}
+	footer {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+}	
